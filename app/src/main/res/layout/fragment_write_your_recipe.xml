@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            tools:context=".homepage.WriteYourRecipe">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imRecipe"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.2"
+                android:src="@drawable/ic_profile" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/atText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/recipe"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/etRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity=""
+                android:backgroundTint="@color/ash"
+                android:hint="@string/write_your_recipe"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/atIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/ingredients"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/etIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/ash"
+                android:hint="@string/write_your_recipe"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textCursorDrawable="@null" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="@string/how_to_make"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/etHowToMake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/ash"
+                android:hint="@string/write_your_recipe"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                style="@style/fontBold16"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/fab_button_background"
+                android:inputType="textCapSentences|textMultiLine"
+                android:src="@drawable/ic_add"
+                android:text="@string/submit_your_recipe"
+                app:fabCustomSize="50dp"
+                app:fabSize="normal" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

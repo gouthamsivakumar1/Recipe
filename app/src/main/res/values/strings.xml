@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">E-Recipe Note</string>
+    <string name="the_masters_s_cuisine">The Masters\'s Cuisine</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="userid">UserId</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="write_your_recipe">Write your recipe</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="how_to_make">How to Make</string>
+    <string name="recipe">Recipe</string>
+    <string name="show_details">show details....</string>
+    <string name="submit_your_recipe">Submit your Recipe</string>
+    <string name="hey">Hey Chief</string>
+    <string name="what_s_your_name">What\'s your Name</string>
+</resources>

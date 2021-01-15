@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_navigation_fragment"
+    app:startDestination="@id/recipeFramgent">
+
+    <fragment
+        android:id="@+id/recipeFramgent"
+        android:name="com.example.recipenote.homepage.RecipeFragment"
+        android:label="RecipeFramgent" >
+        <action
+            android:id="@+id/action_recipeFramgent_to_writeYourRecipe"
+            app:destination="@id/writeYourRecipe" />
+        <action
+            android:id="@+id/action_recipeFramgent_to_recipeDetailsPage"
+            app:destination="@id/recipeDetailsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.example.recipenote.homepage.ProfilePageFragment"
+        android:label="fragment_profile_page_frament"
+        tools:layout="@layout/fragment_profile_page_frament" />
+    <fragment
+        android:id="@+id/writeYourRecipe"
+        android:name="com.example.recipenote.homepage.WriteYourRecipe"
+        android:label="fragment_write_your_recipe"
+        tools:layout="@layout/fragment_write_your_recipe" />
+    <fragment
+        android:id="@+id/recipeDetailsPage"
+        android:name="com.example.recipenote.homepage.RecipeDetailsPage"
+        android:label="RecipeDetailsPage" />
+</navigation>
